@@ -1,0 +1,167 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0 20px; /* Kenar boşluğunu ayarlayın */
+}
+
+.login-form {
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  height: 200px;
+}
+
+.login-form label {
+  margin-bottom: 10px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.login-form .error {
+  color: red;
+  margin-top: 10px;
+}
+
+.login-form button {
+  width: 362px;
+  padding: 10px;
+  background-color: #1890ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+.dashboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  width: 200px;
+  height: 200px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h3 {
+  color: #1890ff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.card:hover h3 {
+  color: #096dd9;
+}
+
+.card a {
+  text-decoration: none;
+  color: inherit;
+}
+.detail {
+  margin-left: 30px;
+}
+.user-list-container {
+  /* Ortak stil düzenlemeleri */
+
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  /* Web için stil düzenlemeleri */
+
+  .user-list-container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .user-list-container form {
+    margin-left: 16px;
+  }
+}
+
+.form1 {
+  margin: 20px;
+}
+.logout-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 100px;
+  height: 25px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: #1890ff;
+  font-weight: bold;
+  border-color: #f2f2f2;
+}
